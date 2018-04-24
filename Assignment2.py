@@ -49,7 +49,7 @@ class Testassignment(unittest.TestCase):
         with open('performance.csv','w') as out:
             out.write ('URL,Duration\n')
             for row in logs:
-                    out.write('%s%s'%(row['name'],str(row['duration'])))
+                    out.write('%s,%s\n' % (row['name'],str(row['duration'])))
 
     def tearDown(self):
         self.driver.quit()
