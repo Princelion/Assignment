@@ -13,10 +13,10 @@ def exam_log(base, exp):
 class Testexam(unittest.TestCase):
 
     def test_log(self):
-        self.assertEquals(exam_log(100,10), 2.0)
+        self.assertEqual(exam_log(100,10), 2.0)
  
     def test_blog(self):
-        self.assertEquals(exam_log(8,2), 3)
+        self.assertEqual(exam_log(8,2), 3)
  
     def test_abs(self):
         self.assertRaises(TypeError, exam_log, 'prince')
